@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box; /* a borda passa a fazer parte da conta da largura */ 
+}
+
+body, html {
+    background-color: #776731f5;
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    overflow: hidden; /* esconde tudo que está fora da borda; arredondou cantos superiores */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+}
+
+section#login > div#imagem {
+    background: #776731f5 url(../imagens/tela-login.jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+
+div#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#formulario > p {
+    font-size: 0.8em;
+    margin: 10px 0px;
+    text-align: justify;
+}
+
+form > div.campo {
+    background-color: #806e36c0;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+
+div.campo > input {
+    background-color: #806e3600;
+    font-size: 1em;
+    width: 77%;
+    height: 90%;
+    margin-top: 2px;
+    border-radius: 5px;
+    padding: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.192);
+}
+
+div.campo > input:focus-within { /* deixa o campo branco na hr de digitar */ 
+    background-color: white;
+}
+
+div.campo > label {
+    margin-left: 4px;
+    color: rgb(112, 87, 3);
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1.2em;
+    width: 100%;
+    height: 40px;
+    background-color: #4995b8f5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form > input[type=submit]:hover {
+    background-color: #256583f5;
+}
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 35px;
+    padding-top: 6px;
+    margin-top: 5px;
+    background-color: #aad0e2f5;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+form > a.botao:hover {
+    background-color: #256583f5;
+}
+
